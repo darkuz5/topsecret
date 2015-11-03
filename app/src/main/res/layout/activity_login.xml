@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fondologin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+        <TextView  android:id="@+id/info" android:padding="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/register"
+            android:layout_centerHorizontal="true" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_above="@+id/info"
+            android:padding="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_alignRight="@+id/logininit"
+            android:layout_alignEnd="@+id/logininit"
+            android:layout_alignLeft="@+id/register"
+            android:layout_alignStart="@+id/register" />
+
+    <ImageView
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/legal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/legal"
+        android:padding="5dip"
+        android:layout_marginBottom="7dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+        <Button
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:id="@+id/register"
+            android:background="@drawable/boton_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/legal"
+            android:layout_marginLeft="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/info"
+            android:layout_toLeftOf="@+id/info" />
+
+        <Button
+            android:text="@string/logininicia"
+            android:textColor="@color/white"
+            android:id="@+id/logininit"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/boton_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/legal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/info"
+            android:layout_toRightOf="@+id/info" />
+
+
+</RelativeLayout>

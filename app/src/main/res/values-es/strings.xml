@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">uTandem</string>
+    <string name="facebook_app_id">183628278643583</string>
+    <string name="legal">Accediendo aceptas las Condiciones Legales</string>
+    <string name="register">Regístrate</string>
+    <string name="logininicia">Iniciar Sesión</string>
+</resources>
